@@ -1,10 +1,7 @@
 /*Mandamos a llamar las fuentes descargadas*/
 @font-face {
-    font-family: "Frauces";
-    src: url(./assets/font/Fraunces.ttf);
-
-    font-family: "Roboto";
-    src: url(./assets/font/Roboto.ttf);
+    font-family: "CinzelDecorative-Regular";
+    src: url(./assets/font/CinzelDecorative-Regular.ttf);  
 }
 
 /*Con Metodologia First Movile*/
@@ -24,12 +21,12 @@ body
 {
     margin: 0;
     font-size: 1.6rem;
-    font-family: "Roboto";
+    font-family: "CinzelDecorative-Regular";
 }
 
 h1, h2, h3, h4, h5, h6
 {
-    font-family: "Frauces";
+    font-family: "CinzelDecorative-Regular";
 } 
 img
 {
@@ -74,18 +71,24 @@ img
 .menu
 {
    position: absolute;
-   top: 7rem;
+   top: 8rem;
    left: 0;
    background: #212121;
    width: 100vw;
    list-style: none;
    padding: 2rem;
    margin: 0;
+   z-index: 999;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.5s;
 }
 .menu__item
 {
     padding: 2rem;
     text-align: center;
+    width: 15rem;
+    margin: auto;
 }
 
 .menu__link
@@ -93,12 +96,14 @@ img
     color: white;
     text-decoration: none;
     position: relative;
+    display: block;
 }
 
 .menu__link span
 {
     padding: 1rem;
     font-size: 1.1em;
+    display: block;
 }
 
 .menu__link:before
@@ -220,6 +225,21 @@ img
     color: white;
 }
 
+/*Revisar*/
+/* .nav-social__item i
+{
+    color: white;
+} */
+
+
+/*Mostrar despues del evento click*/
+.mostrar
+{
+ opacity: 1;
+ visibility: visible;
+}
+
+/*banner*/
 .banner
 {
     background: url(./assets/img/banner.jpg);
@@ -268,29 +288,33 @@ img
     padding: 2rem;
 }
 
-.welcome__title
+.section__title
 {
     font-size: 2em;
     position: relative;
+    text-align: center;
 }
 
 /*Ponemos la barrita con un pseudo elemeto (position relative y absolute)*/
 
-.welcome__title:before
+.section__title:before
 {
     content: "";
-    width: 35vw;
+    width: 20rem;
     position: absolute;
     top: -2rem;
-    left: 30%;
+    left: 50%;
+    transform: translateX(-50%);
     height: 0.3rem;
     background: #eead33;
 }
 
-.welcome__txt
+.section__txt
 {
     font-size: 1.2em;
     color: #777;
+    text-align: center;
+    padding: 2rem;
 }
 
 .welcome__btn
@@ -327,11 +351,12 @@ img
     position: relative;
 }
 
+/*obscurecer la imagen*/
 .design__item:before
 {
     content: "";
     width: 100vw;
-    min-height: 40rem;
+    height: 100%;
     background: rgba(0, 0,0, 0.3);
     position: absolute;
     top: 0;
@@ -343,33 +368,63 @@ img
 .design__title
 {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     color: white;
     font-size: 1.8em;
     width: 100vw;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .design__title:before
 {
     content: "";
-    width: 35vw;
+    width: 20rem;
     position: absolute;
     top: -2rem;
-    left: 30%;
+    left: 50%;
+    transform: translateX(-50%);
     height: 0.3rem;
     background: #eead33;
 }
 
-.design__title::after
+.design__title:after
 {
     content: "";
-    width: 35vw;
+    width: 20rem;
     position: absolute;
     bottom: -2rem;
-    left: 30%;
+    left: 50%;
+    transform: translateX(-50%);
     height: 0.3rem;
     background: #eead33;
+}
+
+.container-testimonials
+{
+    margin: 6rem 0;
+}
+
+.testimonials__img
+{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    /*Para que no se distorcione*/
+    object-fit: cover;
+    margin: auto;
+    border: 0.3rem #eead33 solid;
+
+}
+
+.testimonials__name
+{
+    text-align: center;
+    font-size: 1.4em;
+    color: #eead33;
+    font-weight: bold;
+    /*Texto en mayuscula*/
+    text-transform: uppercase;
 }
