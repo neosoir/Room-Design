@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!--Styles-->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tablet.css" media="screen and (min-width:750px)">
+    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width:1024px)">
 </head>
 <body>
     <!--Header-->
@@ -34,7 +36,7 @@
     <div class="banner">
         <div class="banner__content">
             <h2 class="banner__title">1.0</h2>
-            <p class="banner__txt">This year I’ve completed more complex design projects.</p>
+            <p class="banner__txt"><span span class="color-span">This year I’ve </span>completed more complex design projects.</p>
         </div>
     </div> 
     <!--main-->
@@ -76,9 +78,119 @@
                 <h3 class="design__title">Home Decor & Tips</h3>
                 <img src="./assets/img/img5.jpg" alt="" class="design__img">
             </div>
+
+            <div class="services">
+                <div class="services__container">
+                    <div class="services__icon"><i class="fas fa-cog"></i></div>
+                    <div class="services__content">
+                        <h3 class="services__title">Bedroom Design</h3>
+                        <p class="services__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>   
+                </div>
+    
+                <div class="services__container">
+                    <div class="services__icon"><i class="fas fa-university"></i></div>
+                    <div class="services__content">
+                        <h3 class="services__title">Kitchen Design</h3>
+                        <p class="services__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>                
+                </div>
+    
+                <div class="services__container">
+                    <div class="services__icon"><i class="fas fa-wrench"></i></div>
+                    <div class="services__content">
+                        <h3 class="services__title">Kids Room Design</h3>
+                        <p class="services__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <section class="newslettes">
+            <h2 class="section__title">newslettes</h2>
+            <form action="" class="form">
+                <input type="email" placeholder="Email" class="form__email">
+                <input type="submit" class="form__submit" value="Enviar" >
+            </form>
+        </section>
     </main>
+
+    <footer class="main-footer">
+        <div class="column column--50-25">
+            <h2 class="footer__title">Company</h2>
+            <p class="footer__txt">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod autem veritatis dolorem corrupti, ea consequatur nobis.
+            </p>
+            <cite class="footer__author">-Leonardo Rios P</cite>
+        </div>
+
+        <div class="column column--50-25">
+            <h2 class="footer__title">Tweets</h2>
+            <p class="footer__txt">
+                <i class="fab fa-twitter"></i>
+                Lorem ipsum.
+            </p>
+            <a href="" class="footer__link">https://github.com/neosoir</a>
+            <p class="footer__date">About 15 min ago</p>
+
+            <p class="footer__txt">
+                <i class="fab fa-twitter"></i>
+                Lorem ipsum..
+            </p>
+            <a href="" class="footer__link">https://github.com/neosoir</a>
+            <p class="footer__date">About a day ago</p>
+        </div>
+
+        <div class="column column--50-25">
+            <h2 class="footer__title">Connect</h2>
+            <div class="footer__socials">
+                <div class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                    <a href="" class="social__link">Like us on Facebook</a>
+                </div>
+                <div class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                    <a href="" class="social__link">Follow us on Twitter</a>
+                </div>
+                <div class="social-icon">
+                    <i class="fab fa-dribbble"></i>
+                    <a href="" class="social__link">Follow us on Dribbble</a>
+                </div>
+                <div class="social-icon">
+                    <i class="fab fa-pinterest"></i>
+                    <a href="" class="social__link">Follow us on Pinterest</a>
+                </div>
+                <div class="social-icon">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/neosoir" class="social__link">Pull request on Github</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column column--50-25">
+            <h2 class="footer__title">Contact</h2>
+            <div class="contact-icon">
+                <p class="footer__txt">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="contact-icon">
+                <p class="footer__txt">
+                    <i class="fas fa-phone-alt"></i>
+                    1234567890
+                </p>
+            </div>
+            <div class="contact-icon">
+                <p class="footer__txt">
+                    <i class="fas fa-envelope"></i>
+                    @neosoir.com
+                </p>
+            </div>
+        </div>
+
+    </footer>
+        <p class="copy">© 2021 Room Design. All Rights Reserved | Design by <a href="https:/neosoir.com/">Neo Soir</a></p>
     <script src="./menu.js"></script>
 </body>
 </html>

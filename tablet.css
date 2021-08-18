@@ -1,0 +1,72 @@
+@media screen and (min-width:750px)
+{
+    .main-title
+    {
+        color: white;
+        font-size: 2.5rem;
+    }
+
+    .menu
+    {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        background: none;
+        transition: none;
+        font-size: 1.6rem;
+    }
+
+    .menu__item
+    {
+        width: auto;
+    }
+
+    .icon-menu
+    {
+        display: none;
+    }
+
+    .banner
+    {
+        min-height: 50rem;
+    }
+    .banner:before
+    {
+        min-height: 50rem;
+    }
+
+    .banner__title
+    {
+        font-size: 3.5rem;
+    }
+
+    .banner__txt
+    {
+        font-size: 2.5rem;        
+    }
+    
+    .main
+    {
+        margin-top: 40rem;
+    }
+
+    .services__container
+    {
+        justify-content: center;
+    }
+
+    .services__icon
+    {
+        margin-right: 3rem;
+    }
+
+    .social-icon
+    {
+        margin-left: 10rem;
+    }
+    .social-icon i
+    {
+        margin-right: 3rem;
+    }
+}
